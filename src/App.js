@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./App.css";
 import {
   Table,
   Button,
@@ -143,11 +144,11 @@ class App extends Component {
     });
 
     return (
-      <div className="App container">
-        <h1>Books App</h1>
+      <div className="App-container">
+        <h1>Book Management System</h1>
 
         <Button
-          className="my-3"
+          className="title-button"
           color="primary"
           onClick={this.toggleNewBookModal.bind(this)}
         >
@@ -157,8 +158,11 @@ class App extends Component {
           isOpen={this.state.newBookModal}
           toggle={this.toggleNewBookModal.bind(this)}
         >
-          <ModalHeader toggle={this.toggleNewBookModal.bind(this)}>
-            Modal title
+          <ModalHeader
+            classname="modal-header"
+            toggle={this.toggleNewBookModal.bind(this)}
+          >
+            Add A New Book
           </ModalHeader>
           <ModalBody>
             <FormGroup>
@@ -203,7 +207,10 @@ class App extends Component {
           isOpen={this.state.editBookModal}
           toggle={this.toggleEditBookModal.bind(this)}
         >
-          <ModalHeader toggle={this.toggleEditBookModal.bind(this)}>
+          <ModalHeader
+            classname="modal-header"
+            toggle={this.toggleEditBookModal.bind(this)}
+          >
             Modal title
           </ModalHeader>
           <ModalBody>
@@ -249,7 +256,10 @@ class App extends Component {
           isOpen={this.state.newBookModal}
           toggle={this.toggleNewBookModal.bind(this)}
         >
-          <ModalHeader toggle={this.toggleNewBookModal.bind(this)}>
+          <ModalHeader
+            classname="modal-header"
+            toggle={this.toggleNewBookModal.bind(this)}
+          >
             Modal title
           </ModalHeader>
           <ModalBody>

@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(60, 60, 63);
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.App-container {
+  text-align: center;
+  padding: 30px;
+}
+
+Button {
+  width: 100px;
+}
+
+.title-button {
+  width: 200px;
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 30px;
+}
+
+.modal-header {
+  width: 100%;
+}
+
+tr {
+  color: white;
+}
+
+thead {
+  font-size: 18px;
+  font-style: italic;
+}
